@@ -1,38 +1,46 @@
-.headerDesktop{
-    grid-area: header;
-    width: 100%;
-    margin-top: 10px;
-    background-color: $blanco;
-    border-top: 2px solid $verdeLogo;
-    border-bottom: 2px solid $verdeLogo;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-   .nav{
-       width: 100%;
-        max-width: 1200px;
+@import "_variables";
+
+@media only screen and (min-width:800px){
+    .headerMobile{
+	    display: none; 
+    }
+    .headerDesktop{
+        grid-area: header;
+        width: 100%;
+        margin-top: 10px;
+        background-color: $blanco;
+        border-top: 2px solid $verdeLogo;
+        border-bottom: 2px solid $verdeLogo;
         display: flex;
+        justify-content: center;
+        align-content: center;
         align-items: center;
-        justify-content: space-between;
-        .logo{
-            margin: 10px 0px 10px 0px;
-            width: 335px;
-        }
-        .container__btns{
+       .nav{
+           width: 100%;
+            max-width: 1200px;
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
             align-items: center;
-            .btns__nav{
-                margin-right: 30px;
-                .btn__nav__bar{
-                    color: $azulLogo;
-                    &:hover{
-                        border-bottom: 2px solid $verdeLogo;
-                    }
-                }        
+            justify-content: space-between;
+            .logo{
+                margin: 10px 0px 10px 0px;
+                width: 36vw;
+                max-width: 335px;
             }
-        }
-    } 
+            .container__btns{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                .btns__nav{
+                    margin-right: 30px;
+                    .btn__nav__bar{
+                        color: $azulLogo;
+                        &:hover{
+                            border-bottom: 2px solid $verdeLogo;
+                        }
+                    }        
+                }
+            }
+        } 
+    }
 }
