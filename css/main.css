@@ -8,7 +8,7 @@
   justify-items: center;
   grid-template-areas: "header" "main"  "footer"; }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .headerMobile {
     display: none; }
   .headerDesktop {
@@ -16,8 +16,8 @@
     width: 100%;
     margin-top: 10px;
     background-color: #fff;
-    border-top: 2px solid #65acac;
-    border-bottom: 2px solid #65acac;
+    border-top: 2px solid #43b2a6;
+    border-bottom: 2px solid #43b2a6;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -25,11 +25,11 @@
     .headerDesktop .nav {
       width: 100%;
       max-width: 1200px;
+      height: 100px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
       .headerDesktop .nav .logo {
-        margin: 10px 0px 10px 0px;
         width: 36vw;
         max-width: 335px; }
       .headerDesktop .nav .container__btns {
@@ -42,9 +42,9 @@
           .headerDesktop .nav .container__btns .btns__nav .btn__nav__bar {
             color: #0b2e66; }
             .headerDesktop .nav .container__btns .btns__nav .btn__nav__bar:hover {
-              border-bottom: 2px solid #65acac; } }
+              border-bottom: 2px solid #43b2a6; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .headerDesktop {
     display: none; }
   .headerMobile {
@@ -52,8 +52,8 @@
     width: 100%;
     margin-top: 10px;
     background-color: #fff;
-    border-top: 2px solid #65acac;
-    border-bottom: 2px solid #65acac;
+    border-top: 2px solid #43b2a6;
+    border-bottom: 2px solid #43b2a6;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -61,16 +61,17 @@
     .headerMobile .nav {
       width: 100%;
       max-width: 1200px;
+      height: auto;
+      min-height: 100px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
       .headerMobile .nav .container-fluid .logo {
-        margin: 10px 0px 10px 0px;
         width: 233px;
         max-width: 335px; }
       .headerMobile .nav .container-fluid .btn__nav__color {
-        background-color: #65acac;
-        color: #65acac;
+        background-color: #43b2a6;
+        color: #43b2a6;
         border-radius: 4px; }
         .headerMobile .nav .container-fluid .btn__nav__color .span {
           color: #0b2e66; }
@@ -84,7 +85,11 @@
           .headerMobile .nav .container-fluid .container__btns .btns__nav .btn__nav__bar {
             color: #0b2e66; }
             .headerMobile .nav .container-fluid .container__btns .btns__nav .btn__nav__bar:hover {
-              border-bottom: 2px solid #65acac; } }
+              border-bottom: 2px solid #43b2a6; } }
+    @media only screen and (max-width: 768px) and (max-width: 576px) {
+      .headerMobile .nav .container-fluid .logo {
+        width: 190px;
+        max-width: 335px; } }
 
 .footer {
   width: 100%;
@@ -98,5 +103,52 @@
   .footer .container__footer {
     max-width: 1200px; }
     .footer .container__footer .fa-brands {
-      color: #65acac;
+      color: #43b2a6;
       margin: 10px; }
+
+main {
+  grid-area: main;
+  width: 100%; }
+  main .avatar {
+    display: flex;
+    margin: 50px 30px 50px 30px;
+    align-items: baseline;
+    justify-content: space-around; }
+    main .avatar .avatar__container {
+      justify-content: center; }
+      main .avatar .avatar__container .img__avatar {
+        width: 200px;
+        border: 1px solid transparent;
+        border-radius: 20px; }
+      main .avatar .avatar__container p {
+        margin-top: 40px;
+        width: 200px; }
+    main .avatar .avatar__txt {
+      width: 500px;
+      margin: 0px 20px 0px 20px;
+      padding: 0px 10px 0px 10px;
+      display: flex;
+      align-content: space-around;
+      flex-direction: column; }
+      main .avatar .avatar__txt h1 {
+        text-align: center; }
+      main .avatar .avatar__txt .interlineado {
+        display: flex;
+        flex-direction: column;
+        margin: 10px; }
+  @media only screen and (max-width: 576px) {
+    main .avatar {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px 5px 30px 5px;
+      justify-content: center; }
+      main .avatar .avatar__txt {
+        display: flex;
+        margin: 20px; }
+        main .avatar .avatar__txt h1 {
+          margin: 20px 0px 20px 0px;
+          text-align: center; }
+        main .avatar .avatar__txt .interlineado {
+          display: flex;
+          flex-direction: column;
+          margin: 10px; } }
