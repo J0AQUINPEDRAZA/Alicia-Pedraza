@@ -41,6 +41,11 @@ main{
             flex-wrap: wrap;
             margin: 30px 5px 30px 5px;
             justify-content: center;
+            .avatar__container{
+                p{
+                    display: none;
+                }
+            }
             .avatar__txt{
                 display: flex;
                 margin: 20px;
