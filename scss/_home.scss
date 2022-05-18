@@ -1,0 +1,60 @@
+
+main{
+    align-content: center;
+    section{
+        width: 100%;
+        max-width: 1200px;
+        .avatar{
+            display: flex;
+            flex-direction: column;
+            margin: 40px 0px 0px 40px;
+            padding: 10px;
+            .avatar__container{
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .img__avatar{
+                    width: 200px;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    p{
+                        margin: 10px 0px 30px 0px;
+                    }
+                }
+                .descripcion{
+                    margin-bottom: 30px;
+                }
+            }   
+        }
+        @media only screen and (max-width:576px){
+            .avatar{
+                margin: 0px;
+                align-items: center;
+                .descripcion{
+                    margin: 5px;
+                }
+            }
+        }
+        .borde{
+            border-top: 3px solid $blanco;
+        }
+        .containerCards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+            .cards{
+                @extend .card;
+                &:hover{
+                    box-shadow: 0px 20px 35px 0px $boxShadow;
+                    z-index: 1;
+                    transition: -webkit-box-shadow .2s ease-in-out;
+                    transition: box-shadow .2s ease-in-out;
+                    transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+                }
+            }  
+        }   
+    }
+}

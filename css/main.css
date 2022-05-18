@@ -7,6 +7,12 @@
   grid-auto-rows: 0.1fr auto 3.75rem;
   justify-items: center;
   grid-template-areas: "header" "main"  "footer"; }
+  .body main {
+    grid-area: main;
+    width: 100%;
+    background: linear-gradient(#fff, #43b2a6);
+    display: flex;
+    justify-content: center; }
 
 @media only screen and (min-width: 768px) {
   .headerMobile {
@@ -107,50 +113,134 @@
       margin: 10px; }
 
 main {
-  grid-area: main;
-  width: 100%; }
-  main .avatar {
-    display: flex;
-    margin: 50px 30px 50px 30px;
-    align-items: baseline;
-    justify-content: space-around; }
-    main .avatar .avatar__container {
-      justify-content: center; }
-      main .avatar .avatar__container .img__avatar {
-        width: 200px;
-        border: 1px solid transparent;
-        border-radius: 20px; }
-      main .avatar .avatar__container p {
-        margin-top: 40px;
-        width: 200px; }
-    main .avatar .avatar__txt {
-      width: 500px;
-      margin: 0px 20px 0px 20px;
-      padding: 0px 10px 0px 10px;
+  align-content: center; }
+  main section {
+    width: 100%;
+    max-width: 1200px; }
+    main section .avatar {
       display: flex;
-      align-content: space-around;
-      flex-direction: column; }
-      main .avatar .avatar__txt h1 {
-        text-align: center; }
-      main .avatar .avatar__txt .interlineado {
+      flex-direction: column;
+      margin: 40px 0px 0px 40px;
+      padding: 10px; }
+      main section .avatar .avatar__container {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main section .avatar .avatar__container .img__avatar {
+          width: 200px;
+          border: 1px solid transparent;
+          border-radius: 50%; }
+          main section .avatar .avatar__container .img__avatar p {
+            margin: 10px 0px 30px 0px; }
+        main section .avatar .avatar__container .descripcion {
+          margin-bottom: 30px; }
+    @media only screen and (max-width: 576px) {
+      main section .avatar {
+        margin: 0px;
+        align-items: center; }
+        main section .avatar .descripcion {
+          margin: 5px; } }
+    main section .borde {
+      border-top: 3px solid #fff; }
+    main section .containerCards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0px 30px 0px; }
+      main section .containerCards .cards:hover {
+        box-shadow: 0px 20px 35px 0px #0f0f0f5e;
+        z-index: 1;
+        transition: -webkit-box-shadow .2s ease-in-out;
+        transition: box-shadow .2s ease-in-out;
+        transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
+
+.card, main section .containerCards .cards {
+  width: 100%;
+  max-width: 350px;
+  min-width: 255px;
+  height: 500px;
+  margin: 20px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
+  .card .img__producto, main section .containerCards .cards .img__producto {
+    width: auto;
+    max-width: 224px; }
+    .card .img__producto .img__txt, main section .containerCards .cards .img__producto .img__txt {
+      display: flex;
+      align-self: self-start;
+      margin-left: 10px; }
+
+main .encabezado {
+  margin: 40px 0px 20px 0px;
+  background-color: #0b2e66;
+  height: 150px;
+  display: flex;
+  align-items: center; }
+  main .encabezado h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 50px;
+    margin-bottom: 0; }
+
+main .avatar__sobreMi {
+  display: flex;
+  margin: 50px 30px 50px 30px;
+  align-items: baseline;
+  justify-content: space-around; }
+  main .avatar__sobreMi .avatar__container {
+    justify-content: center; }
+    main .avatar__sobreMi .avatar__container .img__avatar {
+      width: 200px;
+      border: 1px solid transparent;
+      border-radius: 20px; }
+    main .avatar__sobreMi .avatar__container p {
+      margin-left: 40px;
+      margin-top: 60px;
+      width: 200px; }
+      main .avatar__sobreMi .avatar__container p .interlineado {
         display: flex;
         flex-direction: column;
         margin: 10px; }
-  @media only screen and (max-width: 576px) {
-    main .avatar {
+  main .avatar__sobreMi .avatar__txt {
+    width: 500px;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column; }
+    main .avatar__sobreMi .avatar__txt .titulo__avatar {
+      font-size: 2.5rem;
+      text-align: center; }
+    main .avatar__sobreMi .avatar__txt .interlineado {
       display: flex;
-      flex-wrap: wrap;
-      margin: 30px 5px 30px 5px;
-      justify-content: center; }
-      main .avatar .avatar__container p {
-        display: none; }
-      main .avatar .avatar__txt {
+      flex-direction: column;
+      margin: 10px; }
+
+@media only screen and (max-width: 576px) {
+  main .avatar__sobreMi {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 5px 30px 5px;
+    justify-content: center; }
+    main .avatar__sobreMi .avatar__container p {
+      display: none; }
+    main .avatar__sobreMi .avatar__txt {
+      display: flex;
+      margin: 20px; }
+      main .avatar__sobreMi .avatar__txt h1 {
+        margin: 20px 0px 20px 0px;
+        text-align: center; }
+      main .avatar__sobreMi .avatar__txt .interlineado {
         display: flex;
-        margin: 20px; }
-        main .avatar .avatar__txt h1 {
-          margin: 20px 0px 20px 0px;
-          text-align: center; }
-        main .avatar .avatar__txt .interlineado {
-          display: flex;
-          flex-direction: column;
-          margin: 10px; } }
+        flex-direction: column;
+        margin: 10px; } }

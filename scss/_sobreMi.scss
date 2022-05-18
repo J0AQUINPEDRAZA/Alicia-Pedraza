@@ -1,21 +1,41 @@
+@import "_base";
+
 main{
-    grid-area: main;
-    width: 100%;
-    .avatar{
+    .encabezado{
+        
+        margin: 40px 0px 20px 0px;
+        background-color: $azulLogo;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        h1{
+            font-size: 3rem;
+            color: $blanco;
+            margin-left: 50px;
+            margin-bottom: 0;
+        }
+    }
+    .avatar__sobreMi{
         display: flex;
         margin: 50px 30px 50px 30px;
         align-items: baseline;
         justify-content: space-around;
         .avatar__container{
             justify-content: center;
-           .img__avatar{
+            .img__avatar{
                 width: 200px;
                 border: 1px solid transparent;
                 border-radius: 20px;
             }
             p{
-                margin-top: 40px;
+                margin-left: 40px;
+                margin-top: 60px;
                 width: 200px;
+                .interlineado{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                }
             }
         }
         .avatar__txt{
@@ -25,7 +45,8 @@ main{
             display: flex;
             align-content: space-around;
             flex-direction: column;
-            h1{
+            .titulo__avatar{
+                font-size: 2.5rem;
                 text-align: center;
             }
             .interlineado{
@@ -36,7 +57,7 @@ main{
         }       
     }
     @media only screen and (max-width:576px){
-        .avatar{
+        .avatar__sobreMi{
             display: flex;
             flex-wrap: wrap;
             margin: 30px 5px 30px 5px;

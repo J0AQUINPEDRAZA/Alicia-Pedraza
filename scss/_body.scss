@@ -11,4 +11,11 @@
 	grid-template-areas: "header"
 	"main" 
 	"footer";
+	main{
+		grid-area: main;
+		width: 100%;
+		background: linear-gradient($blanco , $verdeLogo);
+		display: flex;
+		justify-content: center;
+	}
 }
