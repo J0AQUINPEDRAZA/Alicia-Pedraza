@@ -9,16 +9,20 @@
     align-content: center;
     align-items: center;
     .container__footer{
+        width: 100%;
         max-width: 1200px;
+        margin: 0px 20px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
         .footerText{
             color: $verdeLogo;
             margin: 0px;
         }
         .iconos{
             display: flex;
+            flex-wrap: wrap;
             .fa-brands{
             color: $verdeLogo;
             margin: 10px;

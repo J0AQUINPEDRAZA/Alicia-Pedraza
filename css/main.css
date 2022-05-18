@@ -31,7 +31,7 @@
     .headerDesktop .nav {
       width: 100%;
       max-width: 1200px;
-      height: 100px;
+      height: 107.5px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
@@ -107,15 +107,19 @@
   align-content: center;
   align-items: center; }
   .footer .container__footer {
+    width: 100%;
     max-width: 1200px;
+    margin: 0px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; }
     .footer .container__footer .footerText {
       color: #43b2a6;
       margin: 0px; }
     .footer .container__footer .iconos {
-      display: flex; }
+      display: flex;
+      flex-wrap: wrap; }
       .footer .container__footer .iconos .fa-brands {
         color: #43b2a6;
         margin: 10px; }
@@ -145,12 +149,19 @@ main .section__home {
           margin: 10px 0px 30px 0px; }
       main .section__home .avatar .avatar__container .descripcion {
         margin-bottom: 30px; }
-  @media only screen and (max-width: 576px) {
+        main .section__home .avatar .avatar__container .descripcion .interlineado {
+          display: none; }
+  @media only screen and (max-width: 768px) {
     main .section__home .avatar {
       margin: 0px;
+      text-align: center;
       align-items: center; }
       main .section__home .avatar .descripcion {
-        margin: 5px; } }
+        flex-direction: column; }
+        main .section__home .avatar .descripcion .interlineado {
+          display: flex;
+          flex-direction: column;
+          margin: 10px; } }
   main .section__home .borde {
     width: 100%;
     border-top: 3px solid #fff; }
@@ -211,6 +222,11 @@ main section {
       color: #fff;
       margin-left: 50px;
       margin-bottom: 0; }
+  @media only screen and (max-width: 576px) {
+    main section .encabezado {
+      justify-content: center; }
+      main section .encabezado h1 {
+        margin-left: 0px; } }
   main section .avatar__sobreMi {
     width: 100%;
     max-width: 1200px;
@@ -224,6 +240,9 @@ main section {
         width: 200px;
         border: 1px solid transparent;
         border-radius: 20px; }
+      @media only screen and (max-width: 768px) {
+        main section .avatar__sobreMi .avatar__container .img__avatar {
+          margin-left: 10px; } }
       main section .avatar__sobreMi .avatar__container p {
         margin-left: 40px;
         margin-top: 60px;
@@ -252,6 +271,8 @@ main section {
       flex-wrap: wrap;
       margin: 30px 5px 30px 5px;
       justify-content: center; }
+      main section .avatar__sobreMi .avatar__container .img__avatar {
+        margin-left: 0px; }
       main section .avatar__sobreMi .avatar__container p {
         display: none; }
       main section .avatar__sobreMi .avatar__txt {
@@ -264,3 +285,69 @@ main section {
           display: flex;
           flex-direction: column;
           margin: 10px; } }
+
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main section .form {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 93vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #0b2e66;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
+    main section .form:hover {
+      box-shadow: 0px 20px 35px 0px #0f0f0f5e;
+      z-index: 1;
+      transition: -webkit-box-shadow .2s ease-in-out;
+      transition: box-shadow .2s ease-in-out;
+      transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
+    main section .form .labelFormContacto {
+      color: #0b2e66;
+      margin: 10px 0px 10px 10px; }
+    main section .form .inputsFormContacto {
+      height: 40px;
+      width: 100%;
+      max-width: 5800px;
+      padding-left: 10px;
+      border: 2px solid #0b2e66;
+      border-radius: 4px;
+      outline: none;
+      background-color: #fff; }
+    main section .form .textareaFormContacto {
+      height: 150px;
+      max-height: 150px;
+      min-height: 150px;
+      width: 100%;
+      max-width: 5800px;
+      padding: 10px;
+      border: 2px solid #0b2e66;
+      border-radius: 4px;
+      outline: none;
+      background-color: #fff; }
+    main section .form .submitFormContacto {
+      color: #43b2a6;
+      height: 40px;
+      width: 100%;
+      max-width: 5800px;
+      margin-top: 10px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      background-color: #0b2e66;
+      box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
+      main section .form .submitFormContacto:hover {
+        box-shadow: 0px 20px 35px 0px #0f0f0f5e;
+        z-index: 1;
+        transition: -webkit-box-shadow .2s ease-in-out;
+        transition: box-shadow .2s ease-in-out;
+        transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+        background-color: #18448c; }
