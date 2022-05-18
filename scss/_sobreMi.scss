@@ -1,77 +1,60 @@
 @import "_base";
 
 main{
-    .encabezado{
-        
-        margin: 40px 0px 20px 0px;
-        background-color: $azulLogo;
-        height: 150px;
+    section{
+        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        h1{
-            font-size: 3rem;
-            color: $blanco;
-            margin-left: 50px;
-            margin-bottom: 0;
-        }
-    }
-    .avatar__sobreMi{
-        display: flex;
-        margin: 50px 30px 50px 30px;
-        align-items: baseline;
-        justify-content: space-around;
-        .avatar__container{
-            justify-content: center;
-            .img__avatar{
-                width: 200px;
-                border: 1px solid transparent;
-                border-radius: 20px;
-            }
-            p{
-                margin-left: 40px;
-                margin-top: 60px;
-                width: 200px;
-                .interlineado{
-                    display: flex;
-                    flex-direction: column;
-                    margin: 10px;
-                }
-            }
-        }
-        .avatar__txt{
-            width: 500px;
-            margin: 0px 20px 0px 20px;
-            padding: 0px 10px 0px 10px;
+        .encabezado{
+            width: 100%;
+            max-width: 1600px;
+            margin: 40px 0px 20px 0px;
+            background-color: $azulLogo;
+            height: 150px;
             display: flex;
-            align-content: space-around;
-            flex-direction: column;
-            .titulo__avatar{
-                font-size: 2.5rem;
-                text-align: center;
+            align-items: center;
+            h1{
+                font-size: 3rem;
+                color: $blanco;
+                margin-left: 50px;
+                margin-bottom: 0;
             }
-            .interlineado{
-                display: flex;
-                flex-direction: column;
-                margin: 10px;
-            }
-        }       
-    }
-    @media only screen and (max-width:576px){
+        }
         .avatar__sobreMi{
+            width: 100%;
+            max-width: 1200px;
             display: flex;
-            flex-wrap: wrap;
-            margin: 30px 5px 30px 5px;
-            justify-content: center;
+            margin: 70px 30px 50px 30px;
+            align-items: baseline;
+            justify-content: space-around;
             .avatar__container{
+                justify-content: center;
+                .img__avatar{
+                    width: 200px;
+                    border: 1px solid transparent;
+                    border-radius: 20px;
+                }
                 p{
-                    display: none;
+                    margin-left: 40px;
+                    margin-top: 60px;
+                    width: 200px;
+                    .interlineado{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px;
+                    }
                 }
             }
             .avatar__txt{
+                width: 500px;
+                margin: 0px 20px 0px 20px;
+                padding: 0px 10px 0px 10px;
                 display: flex;
-                margin: 20px;
-                h1{
-                    margin: 20px 0px 20px 0px;
+                align-content: space-around;
+                flex-direction: column;
+                .titulo__avatar{
+                    font-size: 2.5rem;
                     text-align: center;
                 }
                 .interlineado{
@@ -79,8 +62,33 @@ main{
                     flex-direction: column;
                     margin: 10px;
                 }
-            }
+            }       
         }
+        @media only screen and (max-width:576px){
+            .avatar__sobreMi{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 30px 5px 30px 5px;
+                justify-content: center;
+                .avatar__container{
+                    p{
+                        display: none;
+                    }
+                }
+                .avatar__txt{
+                    display: flex;
+                    margin: 20px;
+                    h1{
+                        margin: 20px 0px 20px 0px;
+                        text-align: center;
+                    }
+                    .interlineado{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px;
+                    }
+                }
+            }
+        }    
     }
 }
-

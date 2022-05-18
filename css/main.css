@@ -107,56 +107,69 @@
   align-content: center;
   align-items: center; }
   .footer .container__footer {
-    max-width: 1200px; }
-    .footer .container__footer .fa-brands {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .container__footer .footerText {
       color: #43b2a6;
-      margin: 10px; }
+      margin: 0px; }
+    .footer .container__footer .iconos {
+      display: flex; }
+      .footer .container__footer .iconos .fa-brands {
+        color: #43b2a6;
+        margin: 10px; }
 
-main {
-  align-content: center; }
-  main section {
+main .section__home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .section__home .avatar {
     width: 100%;
-    max-width: 1200px; }
-    main section .avatar {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 0px 40px;
+    padding: 10px; }
+    main .section__home .avatar .avatar__container {
+      width: fit-content;
       display: flex;
       flex-direction: column;
-      margin: 40px 0px 0px 40px;
-      padding: 10px; }
-      main section .avatar .avatar__container {
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        main section .avatar .avatar__container .img__avatar {
-          width: 200px;
-          border: 1px solid transparent;
-          border-radius: 50%; }
-          main section .avatar .avatar__container .img__avatar p {
-            margin: 10px 0px 30px 0px; }
-        main section .avatar .avatar__container .descripcion {
-          margin-bottom: 30px; }
-    @media only screen and (max-width: 576px) {
-      main section .avatar {
-        margin: 0px;
-        align-items: center; }
-        main section .avatar .descripcion {
-          margin: 5px; } }
-    main section .borde {
-      border-top: 3px solid #fff; }
-    main section .containerCards {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      margin: 30px 0px 30px 0px; }
-      main section .containerCards .cards:hover {
-        box-shadow: 0px 20px 35px 0px #0f0f0f5e;
-        z-index: 1;
-        transition: -webkit-box-shadow .2s ease-in-out;
-        transition: box-shadow .2s ease-in-out;
-        transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
+      align-items: center; }
+      main .section__home .avatar .avatar__container .img__avatar {
+        width: 200px;
+        border: 1px solid transparent;
+        border-radius: 50%; }
+        main .section__home .avatar .avatar__container .img__avatar p {
+          margin: 10px 0px 30px 0px; }
+      main .section__home .avatar .avatar__container .descripcion {
+        margin-bottom: 30px; }
+  @media only screen and (max-width: 576px) {
+    main .section__home .avatar {
+      margin: 0px;
+      align-items: center; }
+      main .section__home .avatar .descripcion {
+        margin: 5px; } }
+  main .section__home .borde {
+    width: 100%;
+    border-top: 3px solid #fff; }
+  main .section__home .containerCards {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 30px 0px; }
+    main .section__home .containerCards .cards:hover {
+      box-shadow: 0px 20px 35px 0px #0f0f0f5e;
+      z-index: 1;
+      transition: -webkit-box-shadow .2s ease-in-out;
+      transition: box-shadow .2s ease-in-out;
+      transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
 
-.card, main section .containerCards .cards {
+.card, main .section__home .containerCards .cards {
   width: 100%;
   max-width: 350px;
   min-width: 255px;
@@ -172,75 +185,82 @@ main {
   border: 1px solid #fff;
   border-radius: 7px;
   box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
-  .card .img__producto, main section .containerCards .cards .img__producto {
+  .card .img__producto, main .section__home .containerCards .cards .img__producto {
     width: auto;
     max-width: 224px; }
-    .card .img__producto .img__txt, main section .containerCards .cards .img__producto .img__txt {
+    .card .img__producto .img__txt, main .section__home .containerCards .cards .img__producto .img__txt {
       display: flex;
       align-self: self-start;
       margin-left: 10px; }
 
-main .encabezado {
-  margin: 40px 0px 20px 0px;
-  background-color: #0b2e66;
-  height: 150px;
+main section {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center; }
-  main .encabezado h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin-left: 50px;
-    margin-bottom: 0; }
-
-main .avatar__sobreMi {
-  display: flex;
-  margin: 50px 30px 50px 30px;
-  align-items: baseline;
-  justify-content: space-around; }
-  main .avatar__sobreMi .avatar__container {
-    justify-content: center; }
-    main .avatar__sobreMi .avatar__container .img__avatar {
-      width: 200px;
-      border: 1px solid transparent;
-      border-radius: 20px; }
-    main .avatar__sobreMi .avatar__container p {
-      margin-left: 40px;
-      margin-top: 60px;
-      width: 200px; }
-      main .avatar__sobreMi .avatar__container p .interlineado {
+  main section .encabezado {
+    width: 100%;
+    max-width: 1600px;
+    margin: 40px 0px 20px 0px;
+    background-color: #0b2e66;
+    height: 150px;
+    display: flex;
+    align-items: center; }
+    main section .encabezado h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-left: 50px;
+      margin-bottom: 0; }
+  main section .avatar__sobreMi {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 70px 30px 50px 30px;
+    align-items: baseline;
+    justify-content: space-around; }
+    main section .avatar__sobreMi .avatar__container {
+      justify-content: center; }
+      main section .avatar__sobreMi .avatar__container .img__avatar {
+        width: 200px;
+        border: 1px solid transparent;
+        border-radius: 20px; }
+      main section .avatar__sobreMi .avatar__container p {
+        margin-left: 40px;
+        margin-top: 60px;
+        width: 200px; }
+        main section .avatar__sobreMi .avatar__container p .interlineado {
+          display: flex;
+          flex-direction: column;
+          margin: 10px; }
+    main section .avatar__sobreMi .avatar__txt {
+      width: 500px;
+      margin: 0px 20px 0px 20px;
+      padding: 0px 10px 0px 10px;
+      display: flex;
+      align-content: space-around;
+      flex-direction: column; }
+      main section .avatar__sobreMi .avatar__txt .titulo__avatar {
+        font-size: 2.5rem;
+        text-align: center; }
+      main section .avatar__sobreMi .avatar__txt .interlineado {
         display: flex;
         flex-direction: column;
         margin: 10px; }
-  main .avatar__sobreMi .avatar__txt {
-    width: 500px;
-    margin: 0px 20px 0px 20px;
-    padding: 0px 10px 0px 10px;
-    display: flex;
-    align-content: space-around;
-    flex-direction: column; }
-    main .avatar__sobreMi .avatar__txt .titulo__avatar {
-      font-size: 2.5rem;
-      text-align: center; }
-    main .avatar__sobreMi .avatar__txt .interlineado {
+  @media only screen and (max-width: 576px) {
+    main section .avatar__sobreMi {
       display: flex;
-      flex-direction: column;
-      margin: 10px; }
-
-@media only screen and (max-width: 576px) {
-  main .avatar__sobreMi {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px 5px 30px 5px;
-    justify-content: center; }
-    main .avatar__sobreMi .avatar__container p {
-      display: none; }
-    main .avatar__sobreMi .avatar__txt {
-      display: flex;
-      margin: 20px; }
-      main .avatar__sobreMi .avatar__txt h1 {
-        margin: 20px 0px 20px 0px;
-        text-align: center; }
-      main .avatar__sobreMi .avatar__txt .interlineado {
+      flex-wrap: wrap;
+      margin: 30px 5px 30px 5px;
+      justify-content: center; }
+      main section .avatar__sobreMi .avatar__container p {
+        display: none; }
+      main section .avatar__sobreMi .avatar__txt {
         display: flex;
-        flex-direction: column;
-        margin: 10px; } }
+        margin: 20px; }
+        main section .avatar__sobreMi .avatar__txt h1 {
+          margin: 20px 0px 20px 0px;
+          text-align: center; }
+        main section .avatar__sobreMi .avatar__txt .interlineado {
+          display: flex;
+          flex-direction: column;
+          margin: 10px; } }

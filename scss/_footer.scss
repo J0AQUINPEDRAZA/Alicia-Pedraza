@@ -10,9 +10,19 @@
     align-items: center;
     .container__footer{
         max-width: 1200px;
-        .fa-brands{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footerText{
+            color: $verdeLogo;
+            margin: 0px;
+        }
+        .iconos{
+            display: flex;
+            .fa-brands{
             color: $verdeLogo;
             margin: 10px;
-        }
+            }
+        }  
     }
 }
