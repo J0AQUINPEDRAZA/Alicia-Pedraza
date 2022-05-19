@@ -14,12 +14,21 @@ main{
             height: 150px;
             display: flex;
             align-items: center;
-            h1{
-                font-size: 3rem;
-                color: $blanco;
-                margin-left: 50px;
-                margin-bottom: 0;
+            .txt__container{
+                width: 100%;
+                max-width: 1600px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                border-bottom: 2px solid $blanco;
+                border-top: 2px solid $blanco;
+                h1{ 
+                    font-size: 3rem;
+                    color: $blanco;
+                    margin-left: 50px;
+                    margin-bottom: 0;
+                }   
             }
+            
         }
         @media only screen and (max-width:576px){
             .encabezado{

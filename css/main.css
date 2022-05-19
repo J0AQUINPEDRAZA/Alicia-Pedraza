@@ -29,15 +29,15 @@
     align-content: center;
     align-items: center; }
     .headerDesktop .nav {
+      margin: 0px 10px 0px 10px;
       width: 100%;
       max-width: 1200px;
-      height: 107.5px;
+      height: 106px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
       .headerDesktop .nav .logo {
-        width: 36vw;
-        max-width: 335px; }
+        width: 100px; }
       .headerDesktop .nav .container__btns {
         display: flex;
         flex-wrap: wrap;
@@ -65,37 +65,39 @@
     align-content: center;
     align-items: center; }
     .headerMobile .nav {
+      margin: 0px 10px 0px 10px;
+      padding: 0px;
       width: 100%;
       max-width: 1200px;
+      min-height: 106px;
       height: auto;
-      min-height: 100px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      .headerMobile .nav .container-fluid .logo {
-        width: 233px;
-        max-width: 335px; }
-      .headerMobile .nav .container-fluid .btn__nav__color {
-        background-color: #43b2a6;
-        color: #43b2a6;
-        border-radius: 4px; }
-        .headerMobile .nav .container-fluid .btn__nav__color .span {
-          color: #0b2e66; }
-      .headerMobile .nav .container-fluid .container__btns {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center; }
-        .headerMobile .nav .container-fluid .container__btns .btns__nav {
-          margin-right: 30px; }
-          .headerMobile .nav .container-fluid .container__btns .btns__nav .btn__nav__bar {
+      .headerMobile .nav .container-fluid {
+        padding: 0px; }
+        .headerMobile .nav .container-fluid .logo {
+          width: 100px; }
+        .headerMobile .nav .container-fluid .btn__nav__color {
+          background-color: #43b2a6;
+          color: #43b2a6;
+          border-radius: 4px; }
+          .headerMobile .nav .container-fluid .btn__nav__color .span {
             color: #0b2e66; }
-            .headerMobile .nav .container-fluid .container__btns .btns__nav .btn__nav__bar:hover {
-              border-bottom: 2px solid #43b2a6; } }
-    @media only screen and (max-width: 768px) and (max-width: 576px) {
-      .headerMobile .nav .container-fluid .logo {
-        width: 190px;
-        max-width: 335px; } }
+        .headerMobile .nav .container-fluid .container__btns {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center; }
+          .headerMobile .nav .container-fluid .container__btns .btns__nav {
+            margin-right: 30px; }
+            .headerMobile .nav .container-fluid .container__btns .btns__nav .btn__nav__bar {
+              color: #0b2e66; }
+              .headerMobile .nav .container-fluid .container__btns .btns__nav .btn__nav__bar:hover {
+                border-bottom: 1px solid #43b2a6; } }
+      @media only screen and (max-width: 768px) and (max-width: 576px) {
+        .headerMobile .nav .container-fluid .logo {
+          width: 100px; } }
 
 .footer {
   width: 100%;
@@ -145,8 +147,8 @@ main .section__home {
         width: 200px;
         border: 1px solid transparent;
         border-radius: 50%; }
-        main .section__home .avatar .avatar__container .img__avatar p {
-          margin: 10px 0px 30px 0px; }
+        main .section__home .avatar .avatar__container .img__avatar h1 {
+          margin: 20px 0px 30px 0px; }
       main .section__home .avatar .avatar__container .descripcion {
         margin-bottom: 30px; }
         main .section__home .avatar .avatar__container .descripcion .interlineado {
@@ -217,11 +219,18 @@ main section {
     height: 150px;
     display: flex;
     align-items: center; }
-    main section .encabezado h1 {
-      font-size: 3rem;
-      color: #fff;
-      margin-left: 50px;
-      margin-bottom: 0; }
+    main section .encabezado .txt__container {
+      width: 100%;
+      max-width: 1600px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      border-bottom: 2px solid #fff;
+      border-top: 2px solid #fff; }
+      main section .encabezado .txt__container h1 {
+        font-size: 3rem;
+        color: #fff;
+        margin-left: 50px;
+        margin-bottom: 0; }
   @media only screen and (max-width: 576px) {
     main section .encabezado {
       justify-content: center; }

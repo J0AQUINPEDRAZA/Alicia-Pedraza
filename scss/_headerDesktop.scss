@@ -15,16 +15,16 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-       .nav{
+        .nav{
+            margin: 0px 10px 0px 10px;
             width: 100%;
             max-width: 1200px;
-            height: 107.5px;
+            height: 106px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             .logo{
-                width: 36vw;
-                max-width: 335px;
+                width: 100px;
             }
             .container__btns{
                 display: flex;
