@@ -15,21 +15,42 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;;
         .footerText{
             color: $verdeLogo;
             margin: 0px;
         }
-        .iconos{
+        .iconosContainer{
             display: flex;
-            flex-wrap: nowrap;
-            .fa-brands{
-            color: $verdeLogo;
-            margin: 10px;
-            }
-            .fa-regular{
+            flex-wrap: wrap;
+            align-items: center;
+            .iconos{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                .fa-brands{
                 color: $verdeLogo;
-                margin: 10px; 
+                margin: 10px;
+                }
+                .fa-regular{
+                    color: $verdeLogo;
+                    margin: 10px; 
+                }
+            }  
+        }
+        @media only screen and (max-width: 576px)   {
+            .iconosContainer{
+                display: flex;
+                align-items: center;
+                .iconos{
+                    .fa-brands{
+                        margin: 0px 10px;
+                    }
+                    .fa-regular{
+                        margin: 0px 10px;
+
+                    }
+                }
             }
         }  
     }

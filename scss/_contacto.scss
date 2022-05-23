@@ -37,7 +37,7 @@ main{
                             margin: 10px; 
                         }   
                     }
-                }
+                }    
             }  
             .form{
                 padding: 20px;
@@ -115,6 +115,25 @@ main{
                 align-content: center;
                 .redes{
                     align-items: center;
+                    .iconos{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        a{
+                            margin: 20px 0px;
+                            color: $azulLogo;
+                            font-weight: bold;
+                            .fa-brands{
+                                color: $azulLogo;
+                                margin: 10px;
+                            }
+                            .fa-regular{
+                                color: $azulLogo;
+                                margin: 10px; 
+                            }   
+                        }
+                    }
                 }
             }
         }

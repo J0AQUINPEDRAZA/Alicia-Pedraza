@@ -75,7 +75,8 @@
       align-items: center;
       justify-content: space-between; }
       .headerMobile .nav .container-fluid {
-        padding: 0px; }
+        padding: 0px;
+        margin: 14px 0px; }
         .headerMobile .nav .container-fluid .logo {
           width: 100px; }
         .headerMobile .nav .container-fluid .btn__nav__color {
@@ -119,15 +120,28 @@
     .footer .container__footer .footerText {
       color: #43b2a6;
       margin: 0px; }
-    .footer .container__footer .iconos {
+    .footer .container__footer .iconosContainer {
       display: flex;
-      flex-wrap: nowrap; }
-      .footer .container__footer .iconos .fa-brands {
-        color: #43b2a6;
-        margin: 10px; }
-      .footer .container__footer .iconos .fa-regular {
-        color: #43b2a6;
-        margin: 10px; }
+      flex-wrap: wrap;
+      align-items: center; }
+      .footer .container__footer .iconosContainer .iconos {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center; }
+        .footer .container__footer .iconosContainer .iconos .fa-brands {
+          color: #43b2a6;
+          margin: 10px; }
+        .footer .container__footer .iconosContainer .iconos .fa-regular {
+          color: #43b2a6;
+          margin: 10px; }
+    @media only screen and (max-width: 576px) {
+      .footer .container__footer .iconosContainer {
+        display: flex;
+        align-items: center; }
+        .footer .container__footer .iconosContainer .iconos .fa-brands {
+          margin: 0px 10px; }
+        .footer .container__footer .iconosContainer .iconos .fa-regular {
+          margin: 0px 10px; } }
 
 main .section__home {
   width: 100%;
@@ -398,4 +412,19 @@ main section {
       flex-direction: column;
       align-content: center; }
       main section .article .redes {
-        align-items: center; } }
+        align-items: center; }
+        main section .article .redes .iconos {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center; }
+          main section .article .redes .iconos a {
+            margin: 20px 0px;
+            color: #0b2e66;
+            font-weight: bold; }
+            main section .article .redes .iconos a .fa-brands {
+              color: #0b2e66;
+              margin: 10px; }
+            main section .article .redes .iconos a .fa-regular {
+              color: #0b2e66;
+              margin: 10px; } }
