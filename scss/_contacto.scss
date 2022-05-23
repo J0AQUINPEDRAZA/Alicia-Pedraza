@@ -4,62 +4,53 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        .form{
-            padding: 20px;
-            margin: 30px 0px;
-            width: 93vw;
-            max-width: 600px;
+        .titulo__consultas{
+            color: $azulLogo;
+        }
+        .article{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: transparent;
-            border: 2px solid $azulLogo;
-            border-radius: 7px;
-            box-shadow: 0px 0px 5px 1px $boxShadow;
-            &:hover{
-                box-shadow: 0px 20px 35px 0px $boxShadow;
-                z-index: 1;
-                transition: -webkit-box-shadow .2s ease-in-out;
-                transition: box-shadow .2s ease-in-out;
-                transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
-            }
-            .labelFormContacto{
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+            margin: 0px 10px;
+            .redes{
+                display: flex;
+                flex-direction: column;
+                .tituloRedes{
                 color: $azulLogo;
-                margin: 10px 0px 10px 10px;
-            }
-            .inputsFormContacto{
-                height: 40px;
-                width: 100%;
-                max-width: 5800px;
-                padding-left: 10px;
+                margin: 20px 0px;
+                }
+                .iconos{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    a{
+                        margin: 20px 0px;
+                        color: $azulLogo;
+                        font-weight: bold;
+                        .fa-brands{
+                            color: $azulLogo;
+                            margin: 10px;
+                        }
+                        .fa-regular{
+                            color: $azulLogo;
+                            margin: 10px; 
+                        }   
+                    }
+                }
+            }  
+            .form{
+                padding: 20px;
+                margin: 30px 0px;
+                width: 93vw;
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
                 border: 2px solid $azulLogo;
-                border-radius: 4px;
-                outline: none;
-                background-color: $blanco;
-            }
-            .textareaFormContacto{
-                height: 150px;
-                max-height: 150px;
-                min-height: 150px;
-                width: 100%;
-                max-width: 5800px;
-                padding: 10px;
-                border: 2px solid $azulLogo;
-                border-radius: 4px;
-                outline: none;
-                background-color: $blanco;
-            }
-            .submitFormContacto{
-                color: $verdeLogo;
-                height: 40px;
-                width: 100%;
-                max-width: 5800px;
-                margin-top: 10px;
-                border: 1px solid transparent;
-                border-radius: 4px;
-                outline: none;
-                background-color: $azulLogo;
+                border-radius: 7px;
                 box-shadow: 0px 0px 5px 1px $boxShadow;
                 &:hover{
                     box-shadow: 0px 20px 35px 0px $boxShadow;
@@ -67,7 +58,63 @@ main{
                     transition: -webkit-box-shadow .2s ease-in-out;
                     transition: box-shadow .2s ease-in-out;
                     transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
-                    background-color: #18448c;
+                }
+                .labelFormContacto{
+                    color: $azulLogo;
+                    margin: 10px 0px 10px 10px;
+                }
+                .inputsFormContacto{
+                    height: 40px;
+                    width: 100%;
+                    max-width: 5800px;
+                    padding-left: 10px;
+                    border: 2px solid $azulLogo;
+                    border-radius: 4px;
+                    outline: none;
+                    background-color: $blanco;
+                }
+                .textareaFormContacto{
+                    height: 150px;
+                    max-height: 150px;
+                    min-height: 150px;
+                    width: 100%;
+                    max-width: 5800px;
+                    padding: 10px;
+                    border: 2px solid $azulLogo;
+                    border-radius: 4px;
+                    outline: none;
+                    background-color: $blanco;
+                }
+                .submitFormContacto{
+                    color: $verdeLogo;
+                    height: 40px;
+                    width: 100%;
+                    max-width: 5800px;
+                    margin-top: 10px;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    outline: none;
+                    background-color: $azulLogo;
+                    box-shadow: 0px 0px 5px 1px $boxShadow;
+                    &:hover{
+                        box-shadow: 0px 20px 35px 0px $boxShadow;
+                        z-index: 1;
+                        transition: -webkit-box-shadow .2s ease-in-out;
+                        transition: box-shadow .2s ease-in-out;
+                        transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+                        background-color: #18448c;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width:768px){
+            .article{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-content: center;
+                .redes{
+                    align-items: center;
                 }
             }
         }

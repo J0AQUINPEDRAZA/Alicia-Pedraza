@@ -32,11 +32,12 @@ main{
         }
         @media only screen and (max-width:576px){
             .encabezado{
-                justify-content: center;
-                h1{
-                    margin-left: 0px; 
-                }
-                
+                text-align: center;
+                .txt__container{
+                  h1{
+                    margin: 0px; 
+                    }  
+                }     
             }
         }
         .avatar__sobreMi{
@@ -54,6 +55,7 @@ main{
                     border-radius: 20px;
                 }
                 @media only screen and (max-width:768px){
+                    
                     .img__avatar{
                         margin-left: 10px; 
                     }

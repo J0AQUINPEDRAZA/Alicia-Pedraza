@@ -22,10 +22,14 @@
         }
         .iconos{
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             .fa-brands{
             color: $verdeLogo;
             margin: 10px;
+            }
+            .fa-regular{
+                color: $verdeLogo;
+                margin: 10px; 
             }
         }  
     }

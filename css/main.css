@@ -32,7 +32,7 @@
       margin: 0px 10px 0px 10px;
       width: 100%;
       max-width: 1200px;
-      height: 106px;
+      height: 107.5px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
@@ -121,8 +121,11 @@
       margin: 0px; }
     .footer .container__footer .iconos {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: nowrap; }
       .footer .container__footer .iconos .fa-brands {
+        color: #43b2a6;
+        margin: 10px; }
+      .footer .container__footer .iconos .fa-regular {
         color: #43b2a6;
         margin: 10px; }
 
@@ -233,9 +236,9 @@ main section {
         margin-bottom: 0; }
   @media only screen and (max-width: 576px) {
     main section .encabezado {
-      justify-content: center; }
-      main section .encabezado h1 {
-        margin-left: 0px; } }
+      text-align: center; }
+      main section .encabezado .txt__container h1 {
+        margin: 0px; } }
   main section .avatar__sobreMi {
     width: 100%;
     max-width: 1200px;
@@ -300,63 +303,99 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  main section .form {
-    padding: 20px;
-    margin: 30px 0px;
-    width: 93vw;
-    max-width: 600px;
+  main section .titulo__consultas {
+    color: #0b2e66; }
+  main section .article {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 2px solid #0b2e66;
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
-    main section .form:hover {
-      box-shadow: 0px 20px 35px 0px #0f0f0f5e;
-      z-index: 1;
-      transition: -webkit-box-shadow .2s ease-in-out;
-      transition: box-shadow .2s ease-in-out;
-      transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
-    main section .form .labelFormContacto {
-      color: #0b2e66;
-      margin: 10px 0px 10px 10px; }
-    main section .form .inputsFormContacto {
-      height: 40px;
-      width: 100%;
-      max-width: 5800px;
-      padding-left: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0px 10px; }
+    main section .article .redes {
+      display: flex;
+      flex-direction: column; }
+      main section .article .redes .tituloRedes {
+        color: #0b2e66;
+        margin: 20px 0px; }
+      main section .article .redes .iconos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; }
+        main section .article .redes .iconos a {
+          margin: 20px 0px;
+          color: #0b2e66;
+          font-weight: bold; }
+          main section .article .redes .iconos a .fa-brands {
+            color: #0b2e66;
+            margin: 10px; }
+          main section .article .redes .iconos a .fa-regular {
+            color: #0b2e66;
+            margin: 10px; }
+    main section .article .form {
+      padding: 20px;
+      margin: 30px 0px;
+      width: 93vw;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
       border: 2px solid #0b2e66;
-      border-radius: 4px;
-      outline: none;
-      background-color: #fff; }
-    main section .form .textareaFormContacto {
-      height: 150px;
-      max-height: 150px;
-      min-height: 150px;
-      width: 100%;
-      max-width: 5800px;
-      padding: 10px;
-      border: 2px solid #0b2e66;
-      border-radius: 4px;
-      outline: none;
-      background-color: #fff; }
-    main section .form .submitFormContacto {
-      color: #43b2a6;
-      height: 40px;
-      width: 100%;
-      max-width: 5800px;
-      margin-top: 10px;
-      border: 1px solid transparent;
-      border-radius: 4px;
-      outline: none;
-      background-color: #0b2e66;
+      border-radius: 7px;
       box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
-      main section .form .submitFormContacto:hover {
+      main section .article .form:hover {
         box-shadow: 0px 20px 35px 0px #0f0f0f5e;
         z-index: 1;
         transition: -webkit-box-shadow .2s ease-in-out;
         transition: box-shadow .2s ease-in-out;
-        transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
-        background-color: #18448c; }
+        transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
+      main section .article .form .labelFormContacto {
+        color: #0b2e66;
+        margin: 10px 0px 10px 10px; }
+      main section .article .form .inputsFormContacto {
+        height: 40px;
+        width: 100%;
+        max-width: 5800px;
+        padding-left: 10px;
+        border: 2px solid #0b2e66;
+        border-radius: 4px;
+        outline: none;
+        background-color: #fff; }
+      main section .article .form .textareaFormContacto {
+        height: 150px;
+        max-height: 150px;
+        min-height: 150px;
+        width: 100%;
+        max-width: 5800px;
+        padding: 10px;
+        border: 2px solid #0b2e66;
+        border-radius: 4px;
+        outline: none;
+        background-color: #fff; }
+      main section .article .form .submitFormContacto {
+        color: #43b2a6;
+        height: 40px;
+        width: 100%;
+        max-width: 5800px;
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        background-color: #0b2e66;
+        box-shadow: 0px 0px 5px 1px #0f0f0f5e; }
+        main section .article .form .submitFormContacto:hover {
+          box-shadow: 0px 20px 35px 0px #0f0f0f5e;
+          z-index: 1;
+          transition: -webkit-box-shadow .2s ease-in-out;
+          transition: box-shadow .2s ease-in-out;
+          transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+          background-color: #18448c; }
+  @media only screen and (max-width: 768px) {
+    main section .article {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center; }
+      main section .article .redes {
+        align-items: center; } }
