@@ -135,15 +135,18 @@
           color: #43b2a6;
           margin: 10px; }
     @media only screen and (max-width: 576px) {
-      .footer .container__footer .footerText {
-        margin-left: 10px; }
-      .footer .container__footer .iconosContainer {
-        display: flex;
-        align-items: center; }
-        .footer .container__footer .iconosContainer .iconos .fa-brands {
-          margin: 0px 10px; }
-        .footer .container__footer .iconosContainer .iconos .fa-regular {
-          margin: 0px 10px; } }
+      .footer .container__footer .container__footer {
+        margin: 0px; }
+        .footer .container__footer .container__footer .footerText {
+          margin-left: 10px; }
+        .footer .container__footer .container__footer .iconosContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly; }
+          .footer .container__footer .container__footer .iconosContainer .iconos .fa-brands {
+            margin: 0px 10px; }
+          .footer .container__footer .container__footer .iconosContainer .iconos .fa-regular {
+            margin: 0px 10px; } }
 
 main .section__home {
   width: 100%;
