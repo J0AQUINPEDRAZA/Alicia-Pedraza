@@ -38,7 +38,10 @@
                 }
             }  
         }
-        @media only screen and (max-width: 576px)   {
+        @media only screen and (max-width: 576px){
+            .footerText{
+                margin-left: 10px;
+            }
             .iconosContainer{
                 display: flex;
                 align-items: center;
